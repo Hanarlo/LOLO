@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Question13"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/QuestionTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Водитель обязан подавать сигналы световыми указателями поворота (рукой)"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="87dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <RadioButton
+                android:layout_marginTop="5dp"
+                android:id="@+id/firstAnswer"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobutton_selector"
+                android:checked="false"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingLeft="16dp"
+                android:text="Перед началом движения или перестроением" />
+
+            <RadioButton
+                android:layout_marginTop="5dp"
+                android:id="@+id/secondAnswer"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobutton_selector"
+                android:checked="false"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingLeft="16dp"
+                android:text="Перед поворотом или разворотом" />
+
+
+            <RadioButton
+                android:layout_marginTop="5dp"
+                android:id="@+id/thirdAnswer"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobutton_selector"
+                android:checked="false"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingLeft="16dp"
+                android:text="Перед остановкой" />
+
+
+            <RadioButton
+                android:layout_marginTop="5dp"
+                android:id="@+id/fourthAnswer"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobutton_selector"
+                android:checked="false"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingLeft="16dp"
+                android:text="Во всех перечисленных случаях" />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/NextAnswerButton"
+            style="@style/NextQuestionButton"
+            android:layout_width="328dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/nextAnswerButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+        </com.google.android.material.button.MaterialButton>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
